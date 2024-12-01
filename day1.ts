@@ -11,12 +11,25 @@ lines.forEach(line => {
   lefts.push(left);
   rights.push(right);
 });
-const sortedLefts = lefts.toSorted((a, b) => a - b);
-const sortedRights = rights.toSorted((a, b) => a - b);
-let totalDifference = 0;
-sortedLefts.forEach((left, index) => {
-  const right = sortedRights[index];
-  const difference = Math.abs(left - right);
-  totalDifference += difference;
-});
-console.log(`Part 1: ${totalDifference}`);
+
+{
+  const sortedLefts = lefts.toSorted((a, b) => a - b);
+  const sortedRights = rights.toSorted((a, b) => a - b);
+  let totalDifference = 0;
+  sortedLefts.forEach((left, index) => {
+    const right = sortedRights[index];
+    const difference = Math.abs(left - right);
+    totalDifference += difference;
+  });
+  console.log(`Part 1: ${totalDifference}`);
+}
+
+{
+  let totalDifference = 0;
+  lefts.forEach(left => {
+    const timesAppearedInRight = rights.filter(right => right === left).length;
+    const result = left * timesAppearedInRight;
+    totalDifference += result;
+  });
+  console.log(`Part 2: ${totalDifference}`);
+}
