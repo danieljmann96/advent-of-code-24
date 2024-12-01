@@ -1,0 +1,27 @@
+{
+  "name": "advent-of-code-24",
+  "version": "1.0.0",
+  "description": "advent of code solutions 2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieljmann96/advent-of-code-24.git"
+  },
+  "author": "danieljmann96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieljmann96/advent-of-code-24/issues"
+  },
+  "homepage": "https://github.com/danieljmann96/advent-of-code-24#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.1",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
